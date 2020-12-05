@@ -1,0 +1,29 @@
+{
+  "name": "@unico/core-scales",
+  "version": "0.1.0",
+  "description": "@Chart Component D3 Scales",
+  "input": "src/index.js",
+  "main": "dist/index.js",
+  "watch": {
+    "build": "{src,test}/*.js"
+  },
+  "scripts": {
+    "build": "lerna --scope @unico/core-scales exec --  rollup -c ../../../lib.rollup.config.js"
+  },
+  "dependencies": {
+    "d3-scale": "^2.0.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "package.json",
+    "src",
+    "README.md",
+    "dist"
+  ],
+  "author": {
+    "name": "Victor de Andrés",
+    "url": "http://victordeandres.es"
+  }
+}

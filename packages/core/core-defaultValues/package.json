@@ -1,0 +1,26 @@
+{
+  "name": "@unico/core-defaultvalues",
+  "version": "0.1.0",
+  "description": "@Chart Component Default values",
+  "input": "src/index.js",
+  "main": "dist/index.js",
+  "watch": {
+    "build": "{src,test}/*.js"
+  },
+  "scripts": {
+    "build": "lerna --scope @unico/core-defaultvalues exec --  rollup -c ../../../lib.rollup.config.js"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "src",
+    "dist"
+  ],
+  "author": {
+    "name": "Victor de Andrés",
+    "url": "http://victordeandres.es"
+  }
+}
