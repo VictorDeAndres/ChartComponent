@@ -1,5 +1,8 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
+import strip from '@rollup/plugin-strip';
+import { terser } from 'rollup-plugin-terser';
+
 import path from 'path';
 
 const PACKAGE_ROOT_PATH = process.cwd();
@@ -19,8 +22,15 @@ export default {
     plugins: [
         svelte({
             customElement: true,
+            tag: null,
         }),
-        svelte(),
+        strip({
+            include: '**/*.(mjs|js|svelte)',
+            exlude: 'tests/**/*',
+            debugger: true,
+            sourceMap: false,
+        }),
         resolve(),
+        terser(),
     ],
 };
