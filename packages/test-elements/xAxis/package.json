@@ -1,0 +1,22 @@
+{
+  "name": "@unico/x-axis",
+  "version": "0.1.0",
+  "description": "Luca Components Menu",
+  "author": "Victor de Andres <victor.deandres@gmail.com>",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@unico/element-xaxis": "^0.1.0",
+    "@unico/core-d3element": "^0.1.0",
+    "@unico/core-defaultvalues": "^0.1.0",
+    "d3-selection": "^2.0.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ]
+}

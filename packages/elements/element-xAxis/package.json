@@ -1,0 +1,36 @@
+{
+  "name": "@unico/element-xaxis",
+  "version": "0.1.0",
+  "description": "@Chart Component D3 horizontal axis element",
+  "input": "src/index.js",
+  "main": "dist/index.js",
+  "watch": {
+    "test": "{src,test}/*.js"
+  },
+  "scripts": {
+    "build": "lerna --scope @unico/element-xaxis exec --  rollup -c ../../../lib.rollup.config.js",
+    "watch": "npm-watch"
+  },
+  "dependencies": {
+    "@unico/core-defaultvalues": "^0.1.0",
+    "@unico/core-scales": "^0.1.0",
+    "@unico/core-pallete": "^0.1.0",
+    "d3-axis": "^2.0.0"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.7.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "src",
+    "dist"
+  ],
+  "author": {
+    "name": "Victor de Andrés",
+    "url": "http://victordeandres.es"
+  }
+}

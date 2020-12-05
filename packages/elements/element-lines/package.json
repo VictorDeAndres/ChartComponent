@@ -1,0 +1,31 @@
+{
+  "name": "@unico/element-lines",
+  "version": "0.1.0",
+  "description": "@Chart Component D3 lines element",
+  "input": "src/index.js",
+  "main": "dist/index.js",
+  "watch": {
+    "build": "{src,test}/*.js"
+  },
+  "scripts": {
+    "build": "lerna --scope @unico/element-lines exec --  rollup -c ../../../lib.rollup.config.js"
+  },
+  "dependencies": {
+    "@unico/core-scales": "^0.1.0",
+    "@unico/core-pallete": "^0.1.0",
+    "d3-shape": "^2.0.0"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "src",
+    "dist"
+  ],
+  "author": {
+    "name": "Victor de Andrés",
+    "url": "http://victordeandres.es"
+  }
+}
